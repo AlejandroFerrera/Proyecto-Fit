@@ -379,3 +379,25 @@ color: #f9ef23 !important;
     }
 
 /* =--------------estilos calculo imc---------------- */
+
+
+
+
+
+
+
+/* -----------------------------ESTILOS API EJERCICIOSSSS!!!!!--------------------------- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    border: solid 5px black;
+    border-radius: 150px;
+    height: 200px;
+    width: 200px;
+    margin-left: 25px;
+    
+}
