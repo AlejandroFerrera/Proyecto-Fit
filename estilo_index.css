@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #141414;
+}
+
+#cursiva {
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    color: #f9ef23;
+}
+
+#barra {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+}
+
+span {
+    font-weight: bold;
+    color: #f9ef23;
+}
+
+.titulo-pilar-amarillo {
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3mm;
+    color: #f9ef23;
+}
+
+.titulo-pilar-negro {
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3mm;
+    color: #141414;
+}
+
+#boton-amarillo {
+    color: #141414;
+    background-color: #f9ef23;
+    font-weight: 900;
+}
+
+#boton-negro {
+    color: #f9ef23;
+    background-color: #141414;
+    font-weight: 900;
+}
+
+#div-amarillo {
+    background-color: #f9ef23;
+}
+
+@media(max-width:1024px) {
+    #bienvenida {
+        width: 90% !important;
+    }
+
+    #contenedor-tema {
+        width: 100% !important;
+    }
+}
+
+#iconos {
+    color: #000000 !important;
+    background-size: 50px;
+}
+
+#about {
+    font-family: 'Anton', sans-serif;
+    color: #000000;
+}
+
+
+
+.navbar-brand img {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav-item :hover {
+    color: #f9ef23 !important;
+    text-decoration: underline !important;   
+}
+
+
+
+
+
+
+/* -------------------------Estilos testimonios-------------------------- */
+
+#txt-experiencia {
+    font-size: 3.0em;
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    color: #f9ef23;
+}
+
+#carta {
+    margin-top: 20px;
+    background-color: #f9ef23;
+}
+
+#carta h1 {
+    font-weight: bolder;
+    font-size: larger;
+    color: #000000;
+}
+
+#carta p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    color: #000000;
+}
+
+/* =--------------estilos inscripcion---------------- */
+
+/* mediaquery para el box de suscripcion */
+
+
+
+#contenedor-texto-inscripcion {
+    color: #f9ef23;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+    margin: 30px auto auto auto;
+    border-radius: 20px;
+}
+
+
+#contenedor-correo {
+    border-width: 9px;
+    border-color: black;
+    border-style: solid;
+    width: 50%;
+    margin: 4% auto 4% auto;
+    color: #141414;
+    background-color: #f9ef23;
+}
+
+#icono-campana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:0px) and (max-width: 768px) {
+
+    #contenedor-correo,
+    #contenedor-texto-inscripcion {
+        width: 100% !important;
+    }
+
+    #contenedor-correo {
+        margin-top: 60px;
+    }
+
+    #flecha {
+        font-size: 80px !important;
+    }
+}
+
+@media(min-width:769px) and (max-width: 1200px) {
+
+    #contenedor-correo,
+    #contenedor-texto-inscripcion {
+        width: 80% !important;
+    }
+
+    #flecha {
+        font-size: 100px !important;
+    }
+}
+
+@media(max-width:600px) {
+    #contenedor-correo {
+        width: 90% !important;
+    }
+
+    #contenedor-correo h1 {
+        display: none;
+    }
+
+    #formulario-correo {
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+
+    input {
+        width: 140% !important;
+    }
+
+    #icono-campana {
+        display: none;
+    }
+
+    #footerbg h1 {
+        display: none;
+    }
+
+    #bgTitulo-e {
+        width: 90% !important;
+    }
+}
+
+
+
+/* flecha */
+@keyframes moviendrew {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+#flecha {
+    animation-name: moviendrew;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 120px;
+    color: #f9ef23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* PARTE ESTEBANNNN!!!!!!!! */
+
+/*GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body {
+color: aliceblue;
+font-family: 'Montserrat', sans-serif;
+overflow-x: hidden;
+background-color: #141414;
+}
+
+#barra {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #000000;
+}
+.carousel-inner{
+    max-height: 34rem;
+}
+#Titulo{
+ background-color: #0e0d0d;
+ font-family: 'Anton', sans-serif;
+}
+#Titulo::after {
+    content: '';
+    background-color: transparent;
+    display:block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+
+#p-separador-Titulo{
+    background-color:#141414;
+    height: 20px;
+}
+#separador-Titulo{
+    background-color:#141414;
+    height: 40px;
+}
+
+
+#footerbg{
+    background-color:#ffd700;
+    height: auto;
+}
+#footer-text{
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    color:#000000
+}
+
+
+@media (max-width:768px) {
+    #intro{
+        width: 90% !important;
+    }
+}
+
+#iconos{
+    background-size: 50px;
+}
+
+/*EJERCICIOS */
+#cursiva-e{
+font-weight: normal;
+font-family: 'Anton', sans-serif;
+color: #f9ef23 !important;
+}
+
+#bgTitulo-e{
+    background-color: #f9ef23;
+    position:relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: #0000;
+}
+
+#titulo-principal-e{
+    font-size: 70px;
+    font-family: 'Anton', sans-serif;
+    color:orangered
+}
+#titulo-normal-bg-e{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    color:orangered
+}
+/*NUTRICION */
+#cursiva-n{
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    font-size:  60px !important; 
+    color: #000000;
+    }
+    
+    #titulo-principal-n{
+        font-size: 70px;
+        font-family: 'Anton', sans-serif;
+        color:#55B11D
+    }
+
+    #titulo-normal-bg-n{
+        font-size: 40px;
+        font-family: 'Anton', sans-serif;
+        color:#55B11D
+    }
+
+/*DESCANSO */
+#cursiva-e{
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    color: #f9ef23;
+    }
+    
+    #titulo-principal-d{
+        font-size: 70px;
+        font-family: 'Anton', sans-serif;
+        color:#A1C6EA
+    } 
+
+    #titulo-normal-bg-d{
+        font-size: 40px;
+        font-family: 'Anton', sans-serif;
+        color:#A1C6EA
+    }
+
