@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
+    height: 100vh;
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -294,7 +295,7 @@ background-color: #000000;
 
 
 #footerbg{
-    background-color:#ffd700;
+    background-color: #f9ef23;
     height: auto;
 }
 #footer-text{
@@ -389,15 +390,48 @@ color: #f9ef23 !important;
 /* -----------------------------ESTILOS API EJERCICIOSSSS!!!!!--------------------------- */
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: #f9ef23;
+    border: 10px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container div h1 {
+    color: black;
+    font-size: 3.0rem;
+    font-weight: 800;
+
+}
+
 .container img {
     border: solid 5px black;
-    border-radius: 150px;
+    border-radius: 50px;
     height: 200px;
     width: 200px;
     margin-left: 25px;
     
+}
+
+.btn-group {
+    width: 50%;
+    margin: auto;
+}
+
+.btn-group label {
+    margin: 10px;
+}
+
+.btn-group img {
+    width: 100px;
+    height: 100px;
 }
