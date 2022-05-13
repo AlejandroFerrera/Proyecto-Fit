@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
+    height: 100vh;
     color: aliceblue;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -45,6 +46,7 @@ span {
     background-color: #f9ef23;
     font-weight: 900;
 }
+
 
 #boton-negro {
     color: #f9ef23;
@@ -294,7 +296,7 @@ background-color: #000000;
 
 
 #footerbg{
-    background-color:#ffd700;
+    background-color: #f9ef23;
     height: auto;
 }
 #footer-text{
@@ -379,50 +381,53 @@ color: #f9ef23 !important;
     }
 
 /* =--------------estilos calculo imc---------------- */
-#titulo-IMC{
-    font-weight: normal;
-    font-family: 'Anton', sans-serif;
-    font-size:  60px !important; 
-}
-
-[type="checkbox"]{
-    display: none;
-}
-label{
-    padding-left: 1.3em;
-    position: relative;
-}
-label:before{
-    content: '';
-    border: solid 1px #55B11D;
-    border-bottom: 3px;
-    width: 1em ;
-    height: 1em ;
-    position: absolute;
-    left: 0px;
-
-}
-[type="checkbox"]:checked + label{
-    border-color: #f9ef23;
-    color: #55B11D;
-    content: 'Hombre';
-}
-
 
 
 
 
 /* -----------------------------ESTILOS API EJERCICIOSSSS!!!!!--------------------------- */
-.container {
+
+.container-excercises {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container img {
-    border: solid 5px black;
-    border-radius: 150px;
-    height: 200px;
-    width: 200px;
+.container-excercises div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    background-color: #f9ef23;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.container-excercises div h1 {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 800;
+
+}
+
+.container-excercises img {
+    border: solid 3px black;
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
     margin-left: 25px;
+    
+}
+
+
+.btn-group label {
+    margin: 10px;
+}
+
+.btn-group img {
+    width: 100px;
+    height: 100px;
 }
