@@ -47,6 +47,7 @@ span {
     font-weight: 900;
 }
 
+
 #boton-negro {
     color: #f9ef23;
     background-color: #141414;
@@ -388,44 +389,42 @@ color: #f9ef23 !important;
 
 
 /* -----------------------------ESTILOS API EJERCICIOSSSS!!!!!--------------------------- */
-.container {
+
+.container-excercises {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container div {
+.container-excercises div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 60%;
     background-color: #f9ef23;
-    border: 10px solid black;
-    margin: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 5px;
     padding: 10px;
 }
 
-.container div h1 {
+.container-excercises div h1 {
     color: black;
-    font-size: 3.0rem;
+    font-size: 1.7rem;
     font-weight: 800;
 
 }
 
-.container img {
-    border: solid 5px black;
-    border-radius: 50px;
-    height: 200px;
-    width: 200px;
+.container-excercises img {
+    border: solid 3px black;
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
     margin-left: 25px;
     
 }
 
-.btn-group {
-    width: 50%;
-    margin: auto;
-}
 
 .btn-group label {
     margin: 10px;

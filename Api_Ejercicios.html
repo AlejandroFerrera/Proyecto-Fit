@@ -40,26 +40,41 @@
       </div>
     </nav>
   </header>
-  <div class="btn-group d-block mx-auto mt-5 mb-" role="group" aria-label="Basic radio toggle button group">
-    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-    <label class="btn btn-outline-warning" for="btnradio1">Legs<img src="./imagenes/leg.png" alt=""></label>
+
+  <section class="w-50 mx-auto text-center pt-5 " id="bienvenida">
+    <h1 class="p-3 fs-2 border-top border-bottom border-3">
+      We want to show you some exercises according to a certain objective to work on.
+    </h1>
+    <p class="p-4 fs-2">First, select your <span>objective:</span>  
+    </p>
+  </section>
+
+
+  <div class="btn-group d-block mx-auto w-75 text-center border-3 border-light rounded" role="group" aria-label="Basic radio toggle button group" id="categorias">
+    <input type="radio" class="btn-check" name="categoria" value="leg" id="btnradio1" autocomplete="off">
+    <label class="btn btn-outline-light" for="btnradio1">Legs<img src="./imagenes/leg.png" alt=""></label>
      
-    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-    <label class="btn btn-outline-warning" for="btnradio2">Chest<img src="./imagenes/chest.png" alt=""></label>
+    <input type="radio" class="btn-check" name="categoria" value="chest" id="btnradio2" autocomplete="off">
+    <label class="btn btn-outline-light" for="btnradio2">Chest<img src="./imagenes/chest.png" alt=""></label>
   
-    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-    <label class="btn btn-outline-warning" for="btnradio3">Waist<img src="./imagenes/waist.png" alt=""></label>
+    <input type="radio" class="btn-check" name="categoria" value="waist" id="btnradio3" autocomplete="off">
+    <label class="btn btn-outline-light" for="btnradio3">Waist<img src="./imagenes/waist.png" alt=""></label>
 
-    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-    <label class="btn btn-outline-warning" for="btnradio4">Cardio<img src="./imagenes/cardio.png" alt=""></label>
+    <input type="radio" class="btn-check" name="categoria" value="cardio" id="btnradio4" autocomplete="off">
+    <label class="btn btn-outline-light" for="btnradio4">Cardio<img src="./imagenes/cardio.png" alt=""></label>
 
   </div>
 
-  <div class="btn btn-warning d-block w-25 mx-auto mt-5 mb-4" id = "boton-ejercicio" onclick="getExercise()" >
-    TRAER EJERCICIOS
+  
+  <p class="w-50 mx-auto text-center pt-5 p-4 fs-2"><span>Click below</span> for show them!  
+  </p>
+
+  <div class="btn d-block w-25 mx-auto mb-4" id = "boton-amarillo" onclick="getExercise();">
+    Let's workout!!
   </div>
 
-  <div class="container">
+
+  <div class="container-excercises" id ="container-excercises">
 
     
   </div>
