@@ -379,8 +379,34 @@ color: #f9ef23 !important;
     }
 
 /* =--------------estilos calculo imc---------------- */
+#titulo-IMC{
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    font-size:  60px !important; 
+}
 
+[type="checkbox"]{
+    display: none;
+}
+label{
+    padding-left: 1.3em;
+    position: relative;
+}
+label:before{
+    content: '';
+    border: solid 1px #55B11D;
+    border-bottom: 3px;
+    width: 1em ;
+    height: 1em ;
+    position: absolute;
+    left: 0px;
 
+}
+[type="checkbox"]:checked + label{
+    border-color: #f9ef23;
+    color: #55B11D;
+    content: 'Hombre';
+}
 
 
 
@@ -399,5 +425,4 @@ color: #f9ef23 !important;
     height: 200px;
     width: 200px;
     margin-left: 25px;
-    
 }
