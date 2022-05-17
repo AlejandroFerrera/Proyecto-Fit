@@ -159,8 +159,9 @@ span {
 @media(min-width:0px) and (max-width: 768px) {
 
     #contenedor-correo,
-    #contenedor-texto-inscripcion {
-        width: 100% !important;
+    #contenedor-texto-inscripcion,
+    #container-exercices {
+        width: 90% !important;
     }
 
     #contenedor-correo {
@@ -175,7 +176,8 @@ span {
 @media(min-width:769px) and (max-width: 1200px) {
 
     #contenedor-correo,
-    #contenedor-texto-inscripcion {
+    #contenedor-texto-inscripcion,
+    #container-exercices {
         width: 80% !important;
     }
 
@@ -183,6 +185,7 @@ span {
         font-size: 100px !important;
     }
 }
+
 
 @media(max-width:600px) {
     #contenedor-correo {
@@ -387,31 +390,27 @@ color: #f9ef23 !important;
 
 /* -----------------------------ESTILOS API EJERCICIOSSSS!!!!!--------------------------- */
 
-.container-excercises {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-excercises div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
+#container-exercices {
     background-color: #f9ef23;
     border: 5px solid black;
     border-radius: 10px;
-    margin: 5px;
-    padding: 10px;
+
 }
 
 .container-excercises div h1 {
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 800;
 
 }
+.container-excercises div h1 span {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+}
+
+
 
 .container-excercises img {
     border: solid 3px black;
@@ -421,6 +420,7 @@ color: #f9ef23 !important;
     margin-left: 25px;
     
 }
+
 
 
 .btn-group label {

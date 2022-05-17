@@ -1,4 +1,5 @@
 const aplicacion = document.querySelector('.container-excercises');
+let lastCall = "";
 
 const options = {
 	method: 'GET',
@@ -8,54 +9,57 @@ const options = {
 	}
 };
 
+function createDiv(nameExercise, url) {
+	return 	`<div class = "container-fluid w-50 mx-auto m-2" id="container-exercices">
+			<div class = "row p-2">
+			<div class = "col-md-9 col-sm-6"><h1><span>Exercise:  </span><br><br>${nameExercise.toUpperCase()}</h1></div>
+			<div class = "col-md-3 col-sm-6"> <img src = ${url}></img></div>
+			</div>
+			</div>`;
+}
 
-let testExcercise = { bodyPart: 'waist', equipment: 'band', gifUrl: 'http://d205bpvrqc9yn1.cloudfront.net/0979.gif', id: '0979', name: 'band horizontal pallof press' }
+const listExercises = async(bodyPart) => {
 
+	await fetch(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, options)
+			.then(response => response.json())
+			.then(response => {
+				for (let i = 15; i < 20; i++) {
+					let name = response[i].name;
+					let url = response[i].gifUrl;
+					const div = document.createElement('div')
+					div.innerHTML = createDiv(name, url);		
+					aplicacion.appendChild(div)					
+				}
+			})
+			.catch(err => console.error(err));
+}
 
-function getExercise() {
-	// for (let index = 979; index < 980; index++) {
-	// 	fetch(`https://exercisedb.p.rapidapi.com/exercises/exercise/0${index}`, options)
-	// 	.then(response => response.json())
-	// 	.then(response => {
-	// 		console.log(response)
-	// 		const div = document.createElement('div')
-	// 		div.innerHTML = 
-	// 		`<h1>${response.name.toUpperCase()}</h1> 
-	// 		<img src = ${response.gifUrl}></img>`
-
-	// 		aplicacion.appendChild(div)
-	// 	})
-	// 	.catch(err => console.error(err));
-
-	// }	#
-
+async function getExercise() {
 	let selectedValue = document.querySelector('input[name = categoria]:checked').value;
 
-	console.log(selectedValue)
-
-	if (selectedValue == 'waist') {
-		const div = document.createElement('div')
-		div.innerHTML =
-			`<h1>${testExcercise.name.toUpperCase()}</h1> 
-			 <img src = ${testExcercise.gifUrl}></img>`
-		aplicacion.appendChild(div)
-
-	} else if (selectedValue == 'leg') {
-		const div = document.createElement('div')
-		div.innerHTML =
-			`<h1>Esto es un ejercicio de pierna</h1>`
-		aplicacion.appendChild(div)
-	} else {
-
-		alert('Selecciona un objetivo')
-
-	}
-
-
-
-
-
-
+	if (selectedValue != lastCall) {
+		$("#container-excercises").empty();
+		switch (selectedValue) {
+			case 'cardio':
+				lastCall = 'cardio';
+				await listExercises('cardio');
+				break;
+			case 'waist':
+				lastCall = 'waist';
+				await listExercises('waist');
+				break;
+			case 'chest':
+				lastCall = 'chest';
+				await listExercises('chest');
+				break;
+			case 'leg':
+				lastCall = 'upper legs';
+				await listExercises('upper legs');
+			default:
+				break;
+		}
+	} 
+	document.getElementById("container-excercises").scrollIntoView({block: "end", behavior: "smooth"})
 }
 
 
