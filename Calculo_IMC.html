@@ -50,42 +50,66 @@
       <!--Div que contiene los 4 datos del formulario-->
       <div class="row">
         <!--GENERO-->
-        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center">
-          <h1 id="titulo-IMC"> Select your gender</h1>
+        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
+          <h1 id="subtitle-IMC"> Select your gender</h1>
           <div class="row">
             <div class="col-6">
-              <button id="btnGender" type="button">Man</button>
+              <div >
+                <img id="images" src="imagenes/hombre.png" alt="Diseñado con recursos de Flaticon.com" width="200px" height="200px">
+              </div>
+              <div>
+                <!-- <button class="position-relative" id="btnGender" type="button">Man</button>-->
+                <button id="btnGender" type="button" class="btn btn-warning position-relative">Man</button>
+              </div>
             </div>
             <div class="col-6">
-              <button id="btnGender" type="button">Woman</button>
+              <div>
+                <img  id="images" src="imagenes/mujer.png" alt="Diseñado con recursos de Flaticon.com" width="200px" height="200px">
+              </div>
+              <button id="btnGender" type="button" class="btn btn-warning position-relative">Womam</button>
             </div>
           </div>
 
         </div>
         <!--EDAD-->
-        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center">
-          <h1 id="titulo-IMC" > How old are you?</h1>
-          <input id="txtEdad" type="number" min="0" max="250" placeholder="25"><label>Years old</label>
+        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
+          <h1 id="subtitle-IMC" > How old are you?</h1>
+          <div id="inputDiv" class="align-self-center">
+            <input id="txtEdad" type="number" min="0" max="250" placeholder="25"><label>Years old</label>
+          </div>
 
         </div>
         <!--ALTURA-->
-        <div  id="divForm" class="col-12 col-md-6 col-lg-6 text-center">
-          <h1 id="titulo-IMC"> How tall are you?</h1>
-           <input id="txtAltura" type="number" min="0" max="250" placeholder="170"><label>Cm</label>
+        <div  id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
+          <h1 id="subtitle-IMC"> How tall are you?</h1>
+          <div id="inputDiv">
+            <input id="txtAltura" type="number" min="0" max="250" placeholder="170"><label>Cm</label>
+           </div>
 
         </div>
         <!--PESO-->
-        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center">
-          <h1 id="titulo-IMC"> What is your weight?</h1>
-           <input id="txtPeso" type="number" min="0" max="595" placeholder="75"><label>Kg</label>
+        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
+          <h1 id="subtitle-IMC"> What is your weight?</h1>
+          <div id="inputDiv">
+            <input id="txtPeso" type="number" min="0" max="595" placeholder="75"><label>Kg</label>
+          </div>
 
         </div>
         <!--BOTON CALCULAR-->
         <div id="divButton" class="text-center">
-          <button id="btnCalcular" type="button">Calcular</button>
+          <button id="btnCalcular" type="button" class="btn btn-warning position-relative">Calcular</button>
 
         </div>
 
+      </div>
+      <!--RESULTADOS PERSONALES -->
+      <h2 id="subtitle-IMC" class="text-center">Personal Results</h2>
+      <div id="progressBar" class="progress">
+        <div class=" bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
 
     </section>
