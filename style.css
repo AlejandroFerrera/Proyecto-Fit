@@ -3,28 +3,43 @@
     font-family: 'Anton', sans-serif;
     font-size:  60px !important; 
 }
-
-
-/*#divForm{
-width: 100%;
-height: 100px;
-}*/
-
-input[type="number"]{
-    -webkit-appearance: textfield;
-    margin: 0;
-    -moz-appearance: textfield;
+#subtitle-IMC{
     font-weight: normal;
     font-family: 'Anton', sans-serif;
-    font-size:  30px !important; 
-    color: blanchedalmond;
-    background: none;
-    outline: 0px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 150px;
+    font-size:  50px !important; 
+}
 
+
+#divForm{
+height: 300px;
+}
+#inputDiv{
+    display: flex;
+    height: 250px;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+input[type="number"]{
+    font-weight: normal ;
+    font-family: 'Anton', sans-serif;
+    font-size:  30px; 
+    color: blanchedalmond;
+    background: none ;
+    outline: 0px ;
+    border-top: none ;
+    border-left: none ;
+    border-right: none ;
+    width: 150px ;
 }
 
 .label{
@@ -48,6 +63,7 @@ input[type="number"]{
     background-color: linear-gradient(to right, blue, rgb(189, 27, 27));
 }
 */
+/*------------------------BOTONES------------------------*/
 #divButton{
     margin-top: 35px;
     height: 70px;
@@ -82,24 +98,34 @@ input[type="number"]{
     font-weight: normal;
     font-family: 'Anton', sans-serif;
     font-size:  30px !important;
-    border-radius: 25px;
+    border-radius: 25px !important;
     width:250px;
     height: 50px;
-    background: linear-gradient(180deg, #3e4144 0%, #474b4e 100%);
-    transition: all .3s;
+    background: linear-gradient(180deg, #3e4144 0%, #474b4e 100% ) !important;
+    transition: all .3s !important;
     border: none;
     color: white;
+    margin-bottom: 10px !important;
 }
 
-#btnGender:visited {
+#btnGender:focus {
     font-weight: normal;
     font-family: 'Anton', sans-serif;
     font-size:  30px !important;
-    border-radius: 25px;
+    border-radius: 25px !important;
     width:250px;
     height: 50px;
-    background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
-    transition: all .3s;
-    border: none
+    background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%)!important;
+    transition: all .3s !important;
+    border: none;
+    margin-bottom: 10px !important;
     ;
+}
+
+#images {
+    margin-bottom: 10px !important;
+  }
+
+#progressBar{
+    height:25px !important;
 }
