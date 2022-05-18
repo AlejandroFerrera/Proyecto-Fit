@@ -1,4 +1,5 @@
 const aplicacion = document.querySelector('.container-excercises');
+const contacUs = document.querySelector('#contact-us');
 let lastCall = "";
 
 const options = {
@@ -59,6 +60,16 @@ async function getExercise() {
 			default:
 				break;
 		}
+		const section = document.createElement('section')
+		section.innerHTML = `		<section class="w-50 mx-auto text-center " id="bienvenida">
+									<p class="p-4 fs-2">If you want a plan designed for you:<br><span><a href = "inscripcion.html">contact us</a></span>  
+									</p>
+								    </section>`
+		contacUs.appendChild(section);
+		
+		
+
+
 	} 
 	document.getElementById("container-excercises").scrollIntoView({block: "end", behavior: "smooth"})
 }
