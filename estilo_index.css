@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+
 body {
     height: 100vh;
     color: aliceblue;
@@ -39,12 +40,14 @@ span {
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.3mm;
     color: #141414;
+    transition: scale 1s linear !important;
 }
 
 #boton-amarillo {
     color: #141414;
     background-color: #f9ef23;
     font-weight: 900;
+    transition: scale 1s linear;
 }
 
 
@@ -52,6 +55,10 @@ span {
     color: #f9ef23;
     background-color: #141414;
     font-weight: 900;
+}
+
+#boton-negro:hover, #boton-amarillo:hover {
+    transform: scale(1.05);
 }
 
 #div-amarillo {
@@ -221,28 +228,6 @@ span {
 
 
 
-/* flecha */
-@keyframes moviendrew {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(30px);
-    }
-}
-
-#flecha {
-    animation-name: moviendrew;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    font-size: 120px;
-    color: #f9ef23;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
