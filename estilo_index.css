@@ -85,7 +85,7 @@ span {
     height: auto;
 }
 
-.nav-item :hover, .nav-item.current-nav-item {
+.nav-item :hover {
     color: #f9ef23 !important;
     text-decoration: underline !important;   
 }
