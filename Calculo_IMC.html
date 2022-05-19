@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="estilo_index.css">
-        <script src="https://kit.fontawesome.com/d32bdc9314.js" crossorigin="anonymous"></script>
-      </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo_index.css">
+  <script src="https://kit.fontawesome.com/d32bdc9314.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
   <!-- Barra de navegacion -->
   <header>
@@ -39,109 +41,122 @@
       </div>
     </nav>
   </header>
-    <!--/////----------General----------/////-->
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 id="titulo-IMC">Calculate BMI</h1>
-          <p>To calculate your BMI we need some basic information about yourself</p>
-        </div>
+  <!--/////----------General----------/////-->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 id="titulo-IMC">Calculate BMI</h1>
+        <p>To calculate your BMI we need some basic information about yourself</p>
       </div>
-      <!--Div que contiene los 4 datos del formulario-->
-      <div class="row">
-        <!--GENERO-->
-        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
-          <h1 id="subtitle-IMC"> Select your gender</h1>
-          <div class="row">
-            <div class="col-6">
-              <div >
-                <img id="images" src="imagenes/hombre.png" alt="Diseñado con recursos de Flaticon.com" width="200px" height="200px">
-              </div>
-              <div>
-                <!-- <button class="position-relative" id="btnGender" type="button">Man</button>-->
-                <button id="btnGender" type="button" class="btn btn-warning position-relative">Man</button>
-              </div>
+    </div>
+    <!--Div que contiene los 4 datos del formulario-->
+    <div class="row w-75 d-flex mx-auto mb-5">
+      <!--GENERO-->
+
+      <div id="divForm" class="col-6 text-center justify-self-start">
+        <h1 id="subtitle-IMC"> Select your gender</h1>
+        <div class="row">
+          <!--HOMBRE-->
+          <div class="col-6">
+            <div>
+              <img id="images" src="imagenes/hombre.png" alt="Diseñado con recursos de Flaticon.com" width="100px"
+                height="100px">
             </div>
-            <div class="col-6">
-              <div>
-                <img  id="images" src="imagenes/mujer.png" alt="Diseñado con recursos de Flaticon.com" width="200px" height="200px">
-              </div>
-              <button id="btnGender" type="button" class="btn btn-warning position-relative">Womam</button>
+            <div>
+              <!-- <button class="position-relative" id="btnGender" type="button">Man</button>-->
+              <button id="btnGender" type="button" class=" position-relative">Man</button>
             </div>
           </div>
-
-        </div>
-        <!--EDAD-->
-        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
-          <h1 id="subtitle-IMC" > How old are you?</h1>
-          <div id="inputDiv" class="align-self-center">
-            <input id="txtEdad" type="number" min="0" max="250" placeholder="25"><label>Years old</label>
+          <!--MUJER-->
+          <div class="col-6">
+            <div>
+              <img id="images" src="imagenes/mujer.png" alt="Diseñado con recursos de Flaticon.com" width="100px"
+                height="100px">
+            </div>
+            <button id="btnGender" type="button" class="position-relative">Womam</button>
           </div>
-
-        </div>
-        <!--ALTURA-->
-        <div  id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
-          <h1 id="subtitle-IMC"> How tall are you?</h1>
-          <div id="inputDiv">
-            <input id="txtAltura" type="number" min="0" max="250" placeholder="170"><label>Cm</label>
-           </div>
-
-        </div>
-        <!--PESO-->
-        <div id="divForm" class="col-12 col-md-6 col-lg-6 text-center mt-5">
-          <h1 id="subtitle-IMC"> What is your weight?</h1>
-          <div id="inputDiv">
-            <input id="txtPeso" type="number" min="0" max="595" placeholder="75"><label>Kg</label>
-          </div>
-
-        </div>
-        <!--BOTON CALCULAR-->
-        <div id="divButton" class="text-center">
-          <button id="btnCalcular" type="button" class="btn btn-warning position-relative">Calcular</button>
-
         </div>
 
       </div>
-      <!--RESULTADOS PERSONALES -->
-      <h2 id="subtitle-IMC" class="text-center">Personal Results</h2>
-      <div id="progressBar" class="progress">
-        <div class=" bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+      <!--EDAD-->
+      <div id="divForm" class="col-6 text-center justify-self-end  ">
+        <h1 id="subtitle-IMC"> How old are you?</h1>
+        <div id="inputDiv" class="align-self-center">
+          <input id="txtEdad" type="number" min="0" max="250" placeholder="25"><label>Years old</label>
+        </div>
+      </div>
+    </div>
+    <!--ALTURA-->
+    <div class="row">
+      <div id="divForm" class="col-6  text-center my-5 ms-5 float-lg-start float-md-start">
+        <h1 id="subtitle-IMC"> How tall are you?</h1>
+        <div id="inputDiv">
+          <input id="txtAltura" type="number" min="0" max="250" placeholder="170"><label>Cm</label>
+        </div>
+  
+      </div>
+      <!--PESO-->
+      <div id="divForm" class="col-6  text-center my-5 me-5 float-lg-end float-md-end">
+        <h1 id="subtitle-IMC"> What is your weight?</h1>
+        <div id="inputDiv">
+          <input id="txtPeso" type="number" min="0" max="595" placeholder="75"><label>Kg</label>
+        </div>
+  
       </div>
 
-    </section>
+    </div>
+
+    <!--BOTON CALCULAR-->
+    <div id="divButton" class="text-center col-12">
+      <button id="btnCalcular" type="button" class="position-relative">Calculate</button>
+    </div>
+    <!--RESULTADOS PERSONALES -->
+
+    <div class="col-12">
+      <h2 class="text-center mt-5">Personal Results</h2>
+    </div>
+
+    <div id="progressBar" class="progress mt-5">
+      <div class=" bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0"
+        aria-valuemax="100"></div>
+      <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0"
+        aria-valuemax="100"></div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+        aria-valuemax="100"></div>
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0"
+        aria-valuemax="100"></div>
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+
+  </section>
 
 
 
-    <!--/////----------Footer----------/////-->
-    <footer>
-      <div id="footerbg" class="d-flex justify-content-between align-items-center">
-  
-        <h1 class="fs-2 fst-italic mt-2" id="cursiva-n">Guía Fitness</h1>
-  
-        <section id="about" class="text-center mt-3">
-          <h2>Quienes Somos?</h2>
-          <p>Alejandro Ferrera y Esteban Díaz</p>
-        </section>
-  
-        <section class="me-2">
-          <i class="fa-brands fa-twitter fa-3x " id="iconos"></i>
-          <i class="fa-brands fa-github fa-3x" id="iconos"></i>
-          <i class="fa-brands fa-facebook fa-3x" id="iconos"></i>
-        </section>
-      </div>
-  
-      <div>
-        <p>© 2022 Guia Fitness Todos los Derechos Reservados</p>
-      </div>
-    </footer>
+  <!--/////----------Footer----------/////-->
+  <footer>
+    <div id="footerbg" class="d-flex justify-content-between align-items-center">
 
-    <script src="IMC.js"></script>
+      <h1 class="fs-2 fst-italic mt-2" id="cursiva-n">Guía Fitness</h1>
+
+      <section id="about" class="text-center mt-3">
+        <h2>Quienes Somos?</h2>
+        <p>Alejandro Ferrera y Esteban Díaz</p>
+      </section>
+
+      <section class="me-2">
+        <i class="fa-brands fa-twitter fa-3x " id="iconos"></i>
+        <i class="fa-brands fa-github fa-3x" id="iconos"></i>
+        <i class="fa-brands fa-facebook fa-3x" id="iconos"></i>
+      </section>
+    </div>
+
+    <div>
+      <p>© 2022 Guia Fitness Todos los Derechos Reservados</p>
+    </div>
+  </footer>
+
+  <script src="IMC.js"></script>
 </body>
+
 </html>
-
-
-

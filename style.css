@@ -12,6 +12,9 @@
 
 #divForm{
 height: 300px;
+border-style: solid;
+border-radius: 25px;
+border-color: #424242;
 }
 #inputDiv{
     display: flex;
@@ -80,15 +83,15 @@ input[type="number"]{
     border: none;
     color: white;
 }
-
 #btnCalcular:hover {
     font-weight: normal;
     font-family: 'Anton', sans-serif;
     font-size:  30px !important;
+    color: black;
     border-radius: 25px;
     width:250px;
     height: 50px;
-    background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
+    background: #f9ef23 !important;
     transition: all .3s;
     border: none
     ;
@@ -112,10 +115,11 @@ input[type="number"]{
     font-weight: normal;
     font-family: 'Anton', sans-serif;
     font-size:  30px !important;
+    color: black;
     border-radius: 25px !important;
     width:250px;
     height: 50px;
-    background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%)!important;
+    background: #f9ef23 !important;
     transition: all .3s !important;
     border: none;
     margin-bottom: 10px !important;
