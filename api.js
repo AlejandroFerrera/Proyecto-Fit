@@ -35,6 +35,7 @@ const listExercises = async(bodyPart) => {
 }
 
 async function getExercise() {
+	
 	let selectedValue = document.querySelector('input[name = categoria]:checked').value;
 
 	if (selectedValue != lastCall) {
@@ -53,7 +54,7 @@ async function getExercise() {
 				await listExercises('chest');
 				break;
 			case 'leg':
-				lastCall = 'upper legs';
+				lastCall = 'leg';
 				await listExercises('upper legs');
 			default:
 				break;
