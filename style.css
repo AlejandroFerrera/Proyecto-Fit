@@ -18,6 +18,12 @@
     color: black; 
 }
 
+#labeltxt{
+    color: black !important;
+    font-family: 'Anton', sans-serif;
+
+}
+
 
 #divForm{
 height: 300px;
