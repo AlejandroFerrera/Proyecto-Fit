@@ -95,6 +95,7 @@ span {
 
 
 
+
 /* -------------------------Estilos testimonios-------------------------- */
 
 #txt-experiencia {
@@ -427,7 +428,16 @@ color: #f9ef23 !important;
     margin: 10px;
 }
 
+.btn-group col {
+    width: 200px;
+    height: 200px;
+}
+
 .btn-group img {
     width: 100px;
     height: 100px;
+}
+
+span.error {
+    color: red;
 }
