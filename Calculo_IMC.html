@@ -11,6 +11,9 @@
   <link type="text/css" rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="estilo_index.css">
   <script src="https://kit.fontawesome.com/d32bdc9314.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,15 +53,15 @@
   <!--/////----------General----------/////-->
   <section class="container-fluid">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center my-4">
         <h1 id="txt-experiencia">Calculate BMI</h1>
-        <p>To calculate your BMI we need some basic information about yourself</p>
+        <h4>To calculate your <span>BMI</span> we need some basic information about yourself</h4>
       </div>
     </div>
     <!--   Div que contiene los 2 datos del formulario-->
-    <div class="row d-flex">
+    <div class="row d-flex justify-content-around">
     <!--ALTURA-->
-      <div id="divForm" class="col-lg-5 col-md-5 col-sm-12 mx-lg-5 me-md-1 ms-md-5 mx-sm-1 text-center">
+      <div id="divForm" class="col-lg-5 col-md-5 col-10  text-center">
         <h1 id="subtitle-IMC"> How tall are you?</h1>
         <div id="inputDiv">
           <input id="txtAltura" type="number" min="0" max="250" placeholder="170">
@@ -67,7 +70,7 @@
   
       </div>
       <!--PESO-->
-      <div id="divForm" class="col-lg-5 col-md-5 col-sm-12 ms-lg-5 ms-md-3 mx-sm-1 text-center">
+      <div id="divForm" class="col-lg-5 col-md-5 col-10  text-center">
         <h1 id="subtitle-IMC"> What is your weight?</h1>
         <div id="inputDiv">
           <input id="txtPeso" type="number" min="0" max="595" placeholder="75"><label id="labeltxt">Kg</label>
@@ -77,7 +80,11 @@
 
     <!--BOTON CALCULAR-->
     <div id="divButton" class="text-center col-12">
-      <button id="btnCalcular" type="button" class="position-relative">Calculate</button>
+      <button id="btnCalcular" type="button" class="position-relative" onclick="calcular();">Calculate</button>
+    </div>
+
+    <div class="result" id ="result">
+
     </div>
 
   </section>
@@ -89,11 +96,11 @@
   <footer>
     <div id="footerbg" class="d-flex justify-content-between align-items-center">
 
-      <h1 class="fs-2 fst-italic mt-2" id="cursiva-n">Guía Fitness</h1>
+      <h1 class="fs-2 fst-italic mt-2" id="cursiva-n">Fit Guide</h1>
 
       <section id="about" class="text-center mt-3">
-        <h2>Quienes Somos?</h2>
-        <p>Alejandro Ferrera y Esteban Díaz</p>
+        <h2>Who are we?</h2>
+        <p>Alejandro Ferrera and Esteban Díaz</p>
       </section>
 
       <section class="me-2">
@@ -104,7 +111,7 @@
     </div>
 
     <div>
-      <p>© 2022 Guia Fitness Todos los Derechos Reservados</p>
+      <p>© 2022 Fit Guide All rights reserved</p>
     </div>
   </footer>
 
