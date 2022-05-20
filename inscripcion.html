@@ -78,7 +78,7 @@
           <div class="mb-3 me-2 needs-validation" novalidate>
             <label for="input-correo" class="form-label fw-bold mt-2">Your e-mail:</label>
             <input type="email" class="form-control fw-bold" id="input-correo" name="correo"
-              placeholder="Ex: name@domain.com">
+            required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Ex: name@domain.com">
           </div>
           <button type="submit" class="btn mt-3 mb-3" id="boton-negro">Subscribe</button>
         </form>
